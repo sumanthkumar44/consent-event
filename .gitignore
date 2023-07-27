@@ -1,0 +1,14 @@
+/consent-event/target/**
+.classpath
+.project
+.settings/
+*/target/**
+.iml
+/appmap.yml
+/.idea/
+.class
+/consent-event/target/classes/*
+/consent-event/target/
+/consent-event/target/classes/
+/consent-event/target/classes/Customer/
+/consent-event/target/classes/Customer/consentevent/controller/

@@ -7,7 +7,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@RestController("/consent")
+@RestController
+@RequestMapping("/consent")
 public class ConsentController {
     @Autowired
     private ConsentService consentService;
@@ -19,7 +20,7 @@ public class ConsentController {
 
     }
     @GetMapping("/{consentId}")
-    public ResponseEntity getConsent(@RequestParam String consentId)
+    public ResponseEntity getConsent(@PathVariable String consentId)
     {
         ConsentModel responseBody= consentService.getConsent(consentId);
         return new ResponseEntity(responseBody, HttpStatus.OK);
