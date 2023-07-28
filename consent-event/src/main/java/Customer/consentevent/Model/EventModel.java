@@ -10,9 +10,8 @@ import javax.persistence.Id;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
 public class EventModel {
-    @Id
+
     private String eventId;
     private String payload;
 }
