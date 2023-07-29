@@ -2,12 +2,14 @@ package Customer.consentevent.service;
 
 import Customer.consentevent.Model.ConsentModel;
 import Customer.consentevent.repository.ConsentRepository;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
+@Slf4j
 public class ConsentService {
     @Autowired
     ConsentRepository consentRepository;

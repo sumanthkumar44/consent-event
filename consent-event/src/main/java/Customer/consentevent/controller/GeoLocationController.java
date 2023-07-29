@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/geolocation")
 public class GeoLocationController {
-    @GetMapping(consumes = MediaType.APPLICATION_JSON_VALUE,
+    @GetMapping(
             produces = MediaType.APPLICATION_JSON_VALUE)
     public String getGeoLocation(@RequestParam("latitude") String latitude, @RequestParam("longitude") String longitude)
     {

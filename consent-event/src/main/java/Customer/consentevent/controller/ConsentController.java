@@ -26,7 +26,15 @@ public class ConsentController {
     public ResponseEntity getConsent(@PathVariable String consentId)
     {
         ConsentModel responseBody= consentService.getConsent(consentId);
-        return new ResponseEntity(responseBody, HttpStatus.OK);
+        if(responseBody!=null)
+        {
+            return new ResponseEntity(responseBody, HttpStatus.OK);
+        }
+        else
+        {
+            return new ResponseEntity(null, HttpStatus.NOT_FOUND);
+        }
+
 
     }
 
