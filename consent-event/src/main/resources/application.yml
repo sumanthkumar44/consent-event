@@ -1,13 +1,8 @@
 spring:
-  datasource:
-    url: jdbc:h2:mem:mydb
-    username: sa
-    password: password
-    driverClassName: org.h2.Driver
-  h2:
-    console.enabled: true
-  jpa:
-    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+  data:
+    mongodb:
+      uri: mongodb+srv://sumanth:dbPwd@cluster0.jghdd2b.mongodb.net/?retryWrites=true&w=majority
+      database: consentEventDB
   mvc:
     pathmatch:
       matching-strategy: ant_path_matcher
