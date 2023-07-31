@@ -1,6 +1,8 @@
 # Read Me First
 
 Ths is a Mock MS provide supporting APIS
+* Need to whitelist IP in mongoDB atlas cluster for running the APP locally
+Following are different flows
 * Consent
 * Event notification
 * CDNA
