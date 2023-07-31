@@ -1,7 +1,11 @@
 # Read Me First
-The following was discovered as part of building this project:
 
-* The original package name 'Customer.consent-event' is invalid and this project uses 'Customer.consentevent' instead.
+Ths is a Mock MS provide supporting APIS
+* Consent
+* Event notification
+* CDNA
+* Google geo coder
+* Swagger : http://localhost:8080/swagger-ui/index.html
 
 # Getting Started
 
